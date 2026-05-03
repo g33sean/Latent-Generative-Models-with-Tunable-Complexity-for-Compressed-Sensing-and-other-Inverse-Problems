@@ -160,12 +160,12 @@ Supported operators: `cs` (compressed sensing), `inpainting`, `super_resolution`
 
 | Script | Method |
 |--------|--------|
-| `DAPS.py` | DAPS: Improving Diffusion Inverse Problem Solving with Decoupled Noise Annealing |
-| `PSLD.py` | Posterior Sampling Latent Diffusion (PSLD) |
+| `DAPS.py` | [Improving Diffusion Inverse Problem Solving with Decoupled Noise Annealing](https://arxiv.org/abs/2407.01521) |
+| `PSLD.py` | [Posterior Sampling Latent Diffusion (PSLD)](https://arxiv.org/pdf/2307.00619) |
 | `flow_chef.py` | Flow-CHEF |
-| `flow_dps.py` | Flow-DPS |
-| `flow_ictm.py` | Flow-ICTM |
-| `resample.py` | Resampling-based posterior sampler |
+| `flow_dps.py` | [FlowDPS: Flow-Driven Posterior Sampling for Inverse Problems](https://arxiv.org/pdf/2503.08136v1) |
+| `flow_ictm.py` | [Flow Priors for Linear Inverse Problems via Iterative Corrupted Trajectory Matching](https://arxiv.org/pdf/2405.18816) |
+| `resample.py` | Solving Inverse Problems with Latent Diffusion Models via Hard Data Consistency |
 
 ---
 
