@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code
+.claude/settings.local.json
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+models/weights/
+
+# Training output directories (created at runtime)
+LDM_*/
+/FFHQ_VAE_ND_*/
+/IMG_VAE_ND_*/
+tb_logs/
+temp_*/
+fid_real/
+
+# Datasets (keep data/dataset_loader.py)
+data/FFHQ*/
+data/imagenet/
+data/lsun/
+
+# Experiment results (generated during evaluation)
+Inverse_Problems/*_VAL/
+Inverse_Problems/Table_*/
+Inverse_Problems/PLOT_*/
+Inverse_Problems/best_k_results.txt
+
+# SLURM scripts and output logs
+sbatch/
+*.sh
+run_ffhq_ldm
+run_img_ldm
+*.out
+*.err

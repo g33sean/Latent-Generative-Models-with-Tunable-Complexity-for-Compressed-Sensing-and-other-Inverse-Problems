@@ -1,0 +1,32 @@
+dataset_params:
+  im_path: 'data/FFHQ'
+  im_channels: 3
+  im_size: 256
+  name: 'FFHQ'
+  val_num_samples: 5000
+  latent_channels: 24
+
+diffusion_params:
+  num_timesteps: 1000
+
+train_params:
+  seed: 661
+  alpha: 0.5
+  task_name: 'LDM_FFHQ_ND_FLOW'
+  num_warmup_steps: 10000
+  batch_size: 100
+  val_batch_size: 100
+  drop_p: 5e-5
+  max_steps: 300000
+  lr: 0.0001
+  acc_steps: 2
+  nd: True
+  log_steps: 1000
+  fid_steps: 10000
+  ldm_ckpt_name: 'flow_ckpt.pth'
+  num_sampling_steps: 50
+  timestep_sampling: 'logit_normal'
+  logit_normal_mean: 0.0
+  logit_normal_std: 1.0
+  loss_weighting: 'uniform'
+  shift_factor: 1.0

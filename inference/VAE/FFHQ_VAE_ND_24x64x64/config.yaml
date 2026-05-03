@@ -1,0 +1,29 @@
+dataset_params:
+  im_channels: 3
+  im_path: data/FFHQ
+  im_size: 256
+  latent_channels: 24
+  name: FFHQ
+  val_num_samples: 5000
+train_params:
+  acc_steps: 2
+  autoencoder_ckpt_name: vae.pth
+  batch_size: 32
+  disc_ramp_steps: 100
+  disc_start: 300
+  disc_weight: 0.1
+  drop_p: 5e-5
+  eval_steps: 500
+  img_save_steps: 1000
+  kl_weight: 1.0e-06
+  lambda_reg: 0.1
+  lr: 0.0001
+  max_train_steps: 100000
+  perceptual_weight: 1
+  r1_every: 100000000000000000
+  r1_gamma: 0.0
+  save_steps: 1000
+  seed: 661
+  task_name: FFHQ_VAE_ND_24x64x64
+  use_adaptive_weight: true
+  val_batch_size: 32

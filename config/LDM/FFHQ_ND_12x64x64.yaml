@@ -1,0 +1,29 @@
+dataset_params:
+  im_path: 'data/FFHQ'
+  im_channels : 3
+  im_size : 256
+  name: 'FFHQ'
+  val_num_samples : 5000
+  latent_channels : 24
+
+diffusion_params:
+  num_timesteps : 1000
+
+train_params:
+  seed : 661
+  alpha : 0.5
+  task_name: 'LDM_FFHQ_ND_Test'
+  num_timesteps : 1000
+  denoising_timesteps : 1000
+  num_warmup_steps: 5000
+  batch_size: 40
+  val_batch_size : 64
+  drop_p: 5e-5
+  epochs : 500
+  lr: 0.0001
+  acc_steps : 2
+  nd : True
+  log_epochs : 3
+  fid_interval : 5
+  ldm_ckpt_name: 'ddpm_ckpt.pth'
+  snr_gamma: 5.0   
