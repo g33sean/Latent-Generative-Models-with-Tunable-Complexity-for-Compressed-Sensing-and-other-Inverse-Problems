@@ -41,6 +41,7 @@ levels without any fine-tuning.
 │   └── lpips.py            # LPIPS perceptual loss (VGG16-based)
 │
 ├── train/
+│   ├── base_ldm_trainer.py # Shared LDM training infrastructure (base class)
 │   ├── vae.py              # VAE trainer (GAN + LPIPS + R1 + nested dropout)
 │   ├── unet.py             # DDPM latent diffusion trainer
 │   ├── unet_imagenet.py    # Class-conditional LDM for ImageNet (CFG)
@@ -79,7 +80,7 @@ levels without any fine-tuning.
 | CIFAR-10  | 3×32×32    | 8×8×8          |
 | CelebA    | 3×64×64    | 16×8×8         |
 | FFHQ      | 3×256×256  | 24×64×64       |
-| ImageNet  | 3×256×256  | 12–24×64×64    |
+| ImageNet  | 3×256×256  | 12×64×64       |
 | LSUN      | 3×256×256  | 24×64×64       |
 
 ---
