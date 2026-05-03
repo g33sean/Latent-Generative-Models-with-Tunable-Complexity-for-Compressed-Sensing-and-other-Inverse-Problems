@@ -156,6 +156,17 @@ python Inverse_Problems/DAPS.py \
 Supported operators: `cs` (compressed sensing), `inpainting`, `super_resolution`,
 `gaussian_blur`, `motion_blur`, `phase_retrieval`, `hdr`.
 
+**Supported samplers:**
+
+| Script | Method |
+|--------|--------|
+| `DAPS.py` | DAPS: Improving Diffusion Inverse Problem Solving with Decoupled Noise Annealing |
+| `PSLD.py` | Posterior Sampling Latent Diffusion (PSLD) |
+| `flow_chef.py` | Flow-CHEF |
+| `flow_dps.py` | Flow-DPS |
+| `flow_ictm.py` | Flow-ICTM |
+| `resample.py` | Resampling-based posterior sampler |
+
 ---
 
 ## Nested Dropout
