@@ -52,12 +52,12 @@ levels without any fine-tuning.
 │
 ├── Inverse_Problems/
 │   ├── forward_operators.py  # CS, inpainting, SR, blur, phase retrieval, HDR operators
-│   ├── DAPS.py               # Diffusion Approximation for Posterior Sampling
-│   ├── PSLD.py               # Pseudo-inverse Guided Latent Diffusion (PSLD)
-│   ├── flow_chef.py          # Flow-CHEF solver
-│   ├── flow_dps.py           # Flow-DPS solver
-│   ├── flow_ictm.py          # Flow-ICTM solver
-│   └── resample.py           # Resampling-based posterior sampler
+│   ├── DAPS.py               # Improving Diffusion Inverse Problem Solving with Decoupled Noise Annealing
+│   ├── PSLD.py               # Posterior Sampling Latent Diffusion (PSLD)
+│   ├── flow_chef.py          # Flow-CHEF
+│   ├── flow_dps.py           # FlowDPS: Flow-Driven Posterior Sampling for Inverse Problems
+│   ├── flow_ictm.py          # Flow Priors for Linear Inverse Problems via Iterative Corrupted Trajectory Matching
+│   └── resample.py           # Solving Inverse Problems with Latent Diffusion Models via Hard Data Consistency
 │
 ├── utils/
 │   └── nd.py               # Nested Dropout (geometric distribution masking)
